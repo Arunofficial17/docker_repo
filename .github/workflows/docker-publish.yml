@@ -23,7 +23,7 @@ jobs:
         id: meta
         uses: docker/metadata-action@v5
         with:
-          images: <username>/<repo-name>
+          images: <Arunofficial17>/<docker_repo>
 
       - name: Build and push Docker image
         uses: docker/build-push-action@v5
