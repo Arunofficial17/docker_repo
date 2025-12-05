@@ -23,12 +23,11 @@ jobs:
         id: meta
         uses: docker/metadata-action@v5
         with:
-          images: <Arunofficial17>/<docker_repo>
+          images: arunofficial17/docker_repo
 
       - name: Build and push Docker image
         uses: docker/build-push-action@v5
         with:
           context: .
           push: true
-          tags: ${{ steps.meta.outputs.tags }}
-          labels: ${{ steps.meta.outputs.labels }}
+          tags: ${{
